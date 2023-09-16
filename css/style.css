@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 21px;
+}
+
+li {
+  border-radius: 7px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 17px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  width: 70px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  color: #eee;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.logo:hover span {
+  display: inline-block;
+  animation: turtle 1.7s linear infinite;
+}
+
+.logo span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.logo span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.logo span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.logo span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.logo span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes turtle {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo:hover {
+  color: teal;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content h1 {
+  color: #eee;
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content button {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background-color: teal;
+  border: none;
+  color: #eee;
+  font-size: 17px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.content button:hover {
+  color: teal;
+  background-color: #eee;
+}
